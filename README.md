@@ -1,18 +1,36 @@
 # 2048-Parser-Translator-Game-engine
+
 Parser-translator for a game programming language using sly in python.
 
-The game elements, its lexicon, and grammaticaldemands of its programming language are given here.  
+The game elements, its lexicon, and grammatical demands of its programming language are given here.  
 
-It is a 2048-game ”family”: Here, variations on the original 2048 game are to be also providedfor.  The variations are:  
-1.  Allowing  subtraction,  multiplication  and  division  in  addition  to  the  plain  doublingoperation at tile mergers.  Thus,  each move,  when it is making two same-value tilesmerge, may obliterate them together (making them 0 by subtraction), or reduce themto 1 by divition, or square them by multiplication.  In this variation, the goal also willbe flexible, any number not necessarily a power of 2 will be achievable.   
-2.  Allowing variables in place of tile values to make puzzles:  enabling questions likehowmany operations it would take at the least, to double the maximum tile value in thisposition?Thus, the elementary operations of the 2048 game are to be provided, and little tweaks tothem to allow all four arithmetic operations and variables are to be added.   
+It is a 2048-game "family": Here, variations on the original 2048 game are to be also provided for.  The variations are:  
+
+1.  Allowing  subtraction,  multiplication  and  division  in  addition  to  the  plain  doubling operation at tile mergers.  Thus,  each move,  when it is making two same-value tiles merge, may obliterate them together (making them 0 by subtraction), or reduce them to 1 by divition, or square them by multiplication.  In this variation, the goal also will be flexible, any number not necessarily a power of 2 will be achievable.   
+
+2.  Allowing variables in place of tile values to make puzzles:  enabling questions like how many operations it would take at the least, to double the maximum tile value in this position? Thus, the elementary operations of the 2048 game are to be provided, and little tweaks tothem to allow all four arithmetic operations and variables are to be added.   
 
 **The Operations:**
    
 **16 Moves**: Add/Subtract/Multiply/Divide Left/Right/Up/Down.: Natural, ex-cept the extensions due to the airthmetic operations added, and the variables assigned.   
-**Assignment:** Assign valueto x,y. :  Setting a tile value.   
-**Naming:** Var varnameis x,y. :  Naming  a  tile.   Each  subsequentmove will move the name also to the destination of this tile according to merging and stopping results.  This may result in a tile getting several names.   
-**Query:** Value in x,y.: This value can be used in an assignment.   
+
+**Assignment:** Setting a tile value.
+
+```
+Assign valueto x,y.
+```
+
+**Naming:** Naming  a  tile.   Each  subsequentmove will move the name also to the destination of this tile according to merging and stopping results.  This may result in a tile getting several names.
+
+```
+Var varnameis x,y.
+```
+
+**Query:** This value can be used in an assignment.
+
+```
+Value in x,y.
+```
 
 **Semantics**  
 
