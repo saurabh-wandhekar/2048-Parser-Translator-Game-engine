@@ -17,19 +17,19 @@ It is a 2048-game "family": Here, variations on the original 2048 game are to be
 **Assignment:** Setting a tile value.
 
 ```
-Assign valueto x,y.
+Assign 2 to 1,1.
 ```
 
 **Naming:** Naming  a  tile.   Each  subsequentmove will move the name also to the destination of this tile according to merging and stopping results.  This may result in a tile getting several names.
 
 ```
-Var varnameis x,y.
+Var k is 1,1.
 ```
 
 **Query:** This value can be used in an assignment.
 
 ```
-Value in x,y.
+Value in 1,1.
 ```
 
 **Semantics**  
